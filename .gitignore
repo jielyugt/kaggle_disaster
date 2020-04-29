@@ -1,3 +1,6 @@
+# pre-trained word2vec vector file
+*.bin
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
