@@ -7,6 +7,9 @@
 <word2vec + linear>
     pass the addition or concatenation of pre-tained word2vec vectors to a linear model
     an easy improvement from the naive method
+	result:
+		addition gives small improvement over naive with cross_val_score of 0.7 and kaggle score of 0.78834
+		concatenation gives a bad cross_val_score of 0.6, maybe 9000d vector is too much for RidgeClassifier
 
 <word2vec + CNN>
     run CNN with filters of difference window sizes on concatenation of pre-trained word2vec vectors
@@ -38,6 +41,10 @@ model = gensim.models.KeyedVectors.load_word2vec_format('GoogleNews-vectors-nega
 
 [Useful Links]
 
-https://towardsdatascience.com/using-word2vec-to-analyze-news-headlines-and-predict-article-success-cdeda5f14751
-https://www.kaggle.com/philculliton/nlp-getting-started-tutorial
-https://github.com/Shawn1993/cnn-text-classification-pytorch/blob/master/model.py
+<Getting Started>
+	https://towardsdatascience.com/using-word2vec-to-analyze-news-headlines-and-predict-article-success-cdeda5f14751
+	https://www.kaggle.com/philculliton/nlp-getting-started-tutorial
+
+<CNN Examples>
+	https://github.com/Shawn1993/cnn-text-classification-pytorch/blob/master/model.py
+	https://github.com/keras-team/keras/blob/master/examples/imdb_cnn.py
