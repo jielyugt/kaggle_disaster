@@ -1,6 +1,9 @@
 # pre-trained word2vec vector file
 *.bin
 
+# predicted submission files
+submission.csv
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
