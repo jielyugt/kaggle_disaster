@@ -19,6 +19,16 @@
 <word2vec + CNN>
     run CNN with filters of difference window sizes on concatenation of pre-trained word2vec vectors
     https://arxiv.org/abs/1408.5882
+	result:
+		best f1 score around 90 so far (0.01 validation split)
+	conclusion:
+		word2evc has too high a dimensionality, thus a deep model is needed to harness it
+		dataset is too small for such a deep model to avoid overfitting
+
+<embedding layer + CNN>
+	instead of word2vec, append an embedding layer to CNN, that way we can reduce the dimensionality of word embeddings and reduce the model size?
+	result:
+		best f1 score around 92 (0.01 validation split)
 
 <BERT>
     TODO
