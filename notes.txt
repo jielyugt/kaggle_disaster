@@ -2,9 +2,7 @@
 
 [TODO]
 
-find ways to reduce the dimensionality of word2vec to suit this small dataset
-further reduce overfitting to improve Kaggle score
-try using f1 score as loss function directly
+learn how to finetune bert
 
 =================================================================
 
@@ -41,7 +39,9 @@ try using f1 score as loss function directly
 		best f1 score around 92 (0.01 validation split)
 
 <BERT>
-    TODO
+    to get better performance in this competition and future competitions
+	load pre-trained bert model, then finetune on our task
+	GPU OOM might be a problem, try Colab first
 
 =================================================================
 
