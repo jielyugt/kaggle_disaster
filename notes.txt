@@ -1,3 +1,13 @@
+=================================================================
+
+[TODO]
+
+find ways to reduce the dimensionality of word2vec to suit this small dataset
+further reduce overfitting to improve Kaggle score
+try using f1 score as loss function directly
+
+=================================================================
+
 [Architecture]
 
 <naive>
