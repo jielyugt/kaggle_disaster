@@ -8,8 +8,13 @@
     pass the addition or concatenation of pre-tained word2vec vectors to a linear model
     an easy improvement from the naive method
 	result:
-		addition gives small improvement over naive with cross_val_score of 0.7 and kaggle score of 0.78834
-		concatenation gives a bad cross_val_score of 0.6, maybe 9000d vector is too much for RidgeClassifier
+		RidgeClassifier + addition gives small improvement over naive with cross_val_score of 0.7 and kaggle score of 0.78834
+		RidgeClassifier + concatenation gives a bad cross_val_score of 0.6, maybe 9000d vector is too much for RidgeClassifier
+		SVC + addition gives cross_val_score of 0.72 and kaggle score of 0.78629 
+		SVC + concatenation gives cross_val_score of 0.72 
+	conclusion:
+		word2vec did not result in significant improvement from one-hot using liear models
+		linear models are not capable to harness the high dimensional concatenation of word embeddings
 
 <word2vec + CNN>
     run CNN with filters of difference window sizes on concatenation of pre-trained word2vec vectors
