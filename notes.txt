@@ -2,8 +2,6 @@
 
 [TODO]
 
-learn how to finetune bert
-
 =================================================================
 
 [Architecture]
@@ -42,6 +40,8 @@ learn how to finetune bert
     to get better performance in this competition and future competitions
 	load pre-trained bert model, then finetune on our task
 	GPU OOM might be a problem, try Colab first
+	result:
+		Kaggle LB 0.800
 
 =================================================================
 
