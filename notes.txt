@@ -37,7 +37,11 @@
 		best f1 score around 92 (0.01 validation split), Kaggle score 0.794
 
 <BERT>
-    WIP, see origin/bert
+    to get better performance in this competition and future competitions
+	load pre-trained bert model, then finetune on our task
+	GPU OOM might be a problem, try Colab first
+	result:
+		Kaggle LB 0.800
 
 =================================================================
 
